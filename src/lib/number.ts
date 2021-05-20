@@ -19,8 +19,12 @@
  * @returns Comment describing the return type.
  * @anotherNote Some other value.
  */
-export const double = (value: number) => {
-  return value * 2;
+export const double = (value: number, orNot: boolean) => {
+  if (orNot) {
+    return value;
+  } else {
+    return value * 2;
+  }
 };
 
 /**
