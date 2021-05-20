@@ -1,2 +1,3 @@
 # github-test-harness
-A repository created for the purpose of testing/verifying new features of GitHub related to maintainership.
+
+A test package with no purpose except for testing GitHub maintainer related features such as branch protection.
