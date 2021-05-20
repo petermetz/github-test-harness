@@ -3,9 +3,11 @@ name: CI
 # Triggers the workflow on push or pull request events
 on:
   push:
+    branches: ['*']
 
   pull_request:
     types: [opened, synchronize, edited, reopened]
+    branches: ['*']
 
 jobs:
   build:
