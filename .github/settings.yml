@@ -16,7 +16,9 @@ branches:
   - name: main
     protection:
       required_status_checks:
+        include_admins: true  # Enforce required status checks for repository administrators.
         strict: true
         contexts: [CI]
       enforce_admins: true
       restrictions:
+
