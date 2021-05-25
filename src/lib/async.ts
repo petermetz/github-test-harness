@@ -21,7 +21,7 @@ export const asyncABC = async () => {
   const somethingSlow = (index: 0 | 1 | 2) => {
     const storage = 'abc'.charAt(index);
     return new Promise<string>((resolve) =>
-      // later...
+      // later... or not? Change E
       resolve(storage)
     );
   };
