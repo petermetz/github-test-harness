@@ -6,6 +6,10 @@ test('double', (t) => {
   t.is(double(2, false), 4);
 });
 
+test('double - 3', (t) => {
+  t.is(double(3, false), 6);
+});
+
 test('power', (t) => {
   t.is(power(2, 4), 16);
 });
