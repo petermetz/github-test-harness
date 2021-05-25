@@ -1,0 +1,24 @@
+repository:
+  name: github-test-harness
+  description: Testing GitHub Actions/Workflows etc.
+  default_branch: main
+  has_downloads: false
+  has_issues: false
+  has_projects: false
+  has_wiki: false
+  archived: false
+  private: false
+  allow_squash_merge: false
+  allow_merge_commit: false
+  allow_rebase_merge: true
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        include_admins: true  # Enforce required status checks for repository administrators.
+        strict: true
+        contexts: [CI]
+      enforce_admins: true
+      restrictions:
+
